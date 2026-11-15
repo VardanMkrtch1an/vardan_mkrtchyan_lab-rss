@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+  <channel>
+    <title>vardan_mkrtchyan's sound experiments</title>
+    <link>http://the.hell.am/~vardan_mkrtchyan/</link>
+    <description>Five-second waveforms generated with Python on a Unix server</description>
+    <language>en</language>
+    <itunes:author>vardan_mkrtchyan</itunes:author>
+    <itunes:summary>A little podcast for a network programming lab.</itunes:summary>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:category text="Technology" />
+    <itunes:image href="http://the.hell.am/~vardan_mkrtchyan/cover.png" />
+    <image>
+      <url>http://the.hell.am/~vardan_mkrtchyan/cover.png</url>
+      <title>vardan_mkrtchyan's sound experiments</title>
+      <link>http://the.hell.am/~vardan_mkrtchyan/</link>
+    </image>
+    <item>
+      <title>vardan_mkrtchyan: my second episode</title>
+      <description>A 220 Hz square wave, lasting five seconds.</description>
+      <guid isPermaLink="false">http://the.hell.am/~vardan_mkrtchyan/episode-2</guid>
+      <pubDate>Sun, 15 Nov 2026 11:31:09 +0000</pubDate>
+      <enclosure url="http://the.hell.am/~vardan_mkrtchyan/episode2.mp3" length="62455" type="audio/mpeg" />
+      <itunes:duration>00:00:05</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>vardan_mkrtchyan: my first sine wave</title>
+      <description>A 440 Hz sine wave, lasting five seconds.</description>
+      <guid isPermaLink="false">http://the.hell.am/~vardan_mkrtchyan/episode-1</guid>
+      <pubDate>Sun, 15 Nov 2026 11:27:58 +0000</pubDate>
+      <enclosure url="http://the.hell.am/~vardan_mkrtchyan/episode1.mp3" length="21115" type="audio/mpeg" />
+      <itunes:duration>00:00:05</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+  </channel>
+</rss>

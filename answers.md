@@ -28,12 +28,22 @@ After I ran `make_news.py` again and pulled to refresh in Feeder, the second pos
 
 4. What is the difference between an ordinary RSS item and a podcast RSS item?
 
+An ordinary RSS item only carries text: a title, a description and a GUID. A podcast item has the same elements plus an `<enclosure>`: the URL of the audio file, its size in bytes (`length`) and its media type (`type="audio/mpeg"`). The podcast app reads the RSS to find the episodes and then makes a second HTTP request to the enclosure URL to download or stream the MP3. My podcast items also have a `<pubDate>` and `<itunes:duration>`, but the enclosure is the essential difference.
+
 5. What is the value of `length` in your first `<enclosure>`? What does it measure?
+
+`length="21115"` (in the enclosure of `episode1.mp3`). It is the size of the MP3 file in bytes. It matches the real file: `ls -l ~/public_html/episode1.mp3` shows 21115 bytes, and `curl -I` on the MP3 URL returns `Content-Length: 21115`. The podcast app can use it to know how much it will download before it starts.
 
 6. What changed in the XML after you added the second episode?
 
+A second `<item>` appeared in the `<channel>`, above the first one (newest first). It has its own title ("vardan_mkrtchyan: my second episode"), description ("A 220 Hz square wave, lasting five seconds."), a different GUID (`.../episode-2` instead of `.../episode-1`), its own `<pubDate>`, and a different enclosure URL (`episode2.mp3` instead of `episode1.mp3`) with `length="62455"`. The channel part and the first item stayed the same, including the first GUID, enclosure and length, because `make_podcast.py` does not regenerate an MP3 that already exists.
+
 7. Did you hear both waves in your podcast app? How are the sounds different?
+
+Yes, I played both episodes in AntennaPod and they sound clearly different. The sine wave (440 Hz) is a smooth, pure tone. The square wave sounded a bit higher to me. Its frequency is actually lower (220 Hz, one octave below 440 Hz), but because it jumps abruptly between +1 and -1 it contains many odd harmonics (660, 1100, 1540 Hz, ...), so it sounds buzzy and bright, and a phone speaker reproduces those higher harmonics better than the 220 Hz fundamental. The harmonics are also why its MP3 is bigger (62455 bytes vs 21115) even though both are five seconds long.
 
 ## Screenshots
 
 ![RSS app](screenshots/rss.jpg)
+
+![Podcast app](screenshots/podcast.jpg)
