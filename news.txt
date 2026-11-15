@@ -1,1 +1,2 @@
-Hello from my Unix account|This is my first RSS entry. I will change it before submitting.
+vardan_mkrtchyan: my first RSS post|Hi! This is my first news entry, published from my Unix account on the.hell.am without any blogging platform.
+vardan_mkrtchyan: second post, the feed works|My RSS reader picked up the first post, so here is a second one. Subscribers will see it after a refresh, and I never had to notify anyone.

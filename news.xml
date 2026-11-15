@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>vardan_mkrtchyan's little RSS feed</title>
+    <link>http://the.hell.am/~vardan_mkrtchyan/</link>
+    <description>News published from a Unix shell</description>
+    <language>en</language>
+    <item>
+      <title>vardan_mkrtchyan: second post, the feed works</title>
+      <description>My RSS reader picked up the first post, so here is a second one. Subscribers will see it after a refresh, and I never had to notify anyone.</description>
+      <guid isPermaLink="false">http://the.hell.am/~vardan_mkrtchyan/news-item-2</guid>
+    </item>
+    <item>
+      <title>vardan_mkrtchyan: my first RSS post</title>
+      <description>Hi! This is my first news entry, published from my Unix account on the.hell.am without any blogging platform.</description>
+      <guid isPermaLink="false">http://the.hell.am/~vardan_mkrtchyan/news-item-1</guid>
+    </item>
+  </channel>
+</rss>
