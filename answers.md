@@ -4,11 +4,11 @@ My Unix username: vardan_mkrtchyan
 
 Public RSS feed URL: https://the.hell.am/~vardan_mkrtchyan/news.xml
 
-Public podcast feed URL:
+Public podcast feed URL: https://the.hell.am/~vardan_mkrtchyan/podcast.xml
 
 RSS reader and operating system used: Feeder on Android
 
-Podcast player and operating system used:
+Podcast player and operating system used: AntennaPod on Android
 
 ## RSS
 
